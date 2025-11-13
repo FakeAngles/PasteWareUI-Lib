@@ -809,6 +809,10 @@ function Library:AddToRegistry(Instance, Properties, IsHud)
     end;
 end;
 
+function Library:AddRegistry(...)
+    return self:AddToRegistry(...);
+end;
+
 function Library:RemoveFromRegistry(Instance)
     local Data = Library.RegistryMap[Instance];
 
